@@ -1,0 +1,24 @@
+{
+  "tables": [
+      {
+          "name": "Employee",
+          "attributes": ["EmpID", "DeptID", "DeptName", "EmpName"],
+          "primary_key": ["EmpID"],
+          "candidate_keys": [],
+          "multivalued_attributes": []
+      }
+  ],
+  "functional_dependencies": [
+      {
+          "lhs": ["EmpID"],
+          "rhs": ["EmpName", "DeptID"],
+          "table": "Employee"
+      },
+      {
+          "lhs": ["DeptID"],
+          "rhs": ["DeptName"],
+          "table": "Employee"
+      }
+  ],
+  "multivalued_dependencies": []
+}

@@ -1,0 +1,24 @@
+{
+    "tables": [
+      {
+        "name": "CourseSkills",
+        "attributes": ["InstructorID", "Course", "Skill"],
+        "primary_key": ["InstructorID", "Course", "Skill"],
+        "candidate_keys": [],
+        "multivalued_attributes": []
+      }
+    ],
+    "functional_dependencies": [],
+    "multivalued_dependencies": [
+      {
+        "lhs": ["InstructorID"],
+        "rhs": ["Course"],
+        "table": "CourseSkills"
+      },
+      {
+        "lhs": ["InstructorID"],
+        "rhs": ["Skill"],
+        "table": "CourseSkills"
+      }
+    ]
+}
